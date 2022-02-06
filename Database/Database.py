@@ -100,7 +100,7 @@ class Database:
         count = await self.col.count_documents({"notif": True})
         return count
 
-async def get_all_users(self):
+    async def get_all_users(self):
         return self.col.find({})
     
 
